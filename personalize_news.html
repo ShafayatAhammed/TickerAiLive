@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/438111064d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>TickerAi - Personalize News</title>
+    <link rel="stylesheet" crossorigin href="/assets/main-QesgUvCb.css" />
+  </head>
+  <body class="font-LeagueSpartan bg-white dark:bg-gray-900">
+    <!--Navbar start-->
+
+    <nav
+      class="relative flex justify-between items-center px-10 ssm:px-20 py-4 bg-white dark:bg-gray-900 gap-10 sticky top-0 z-50"
+    >
+      <div class="ssm:flex ssm:gap-5 ssm:items-center">
+        <a href="/">
+          <img
+            src="data:image/png;base64,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"
+            alt="TickerAi Logo"
+          />
+        </a>
+        <p class="text-sm hidden ssm:block dark:text-white">
+          A Mark Cuban Company <br />
+          AI-based Financial Market News Aggregator
+        </p>
+      </div>
+      <div class="gap-5 items-center hidden lmd:flex">
+        <a href="personalize_news.html">
+          <button
+            type="button"
+            class="bg-pmr-color font-semibold text-white px-5 py-2 rounded-md"
+          >
+            Personalize News
+          </button>
+        </a>
+        <div
+          class="bg-pmr-color-opc-15 cursor-pointer text-lg font-extrabold text-pmr-colo px-3 py-1 flex justify-center items-center rounded-[50%]"
+        >
+          <p class="text-pmr-color">IK</p>
+        </div>
+        <i
+          class="fa-regular fa-moon cursor-pointer text-black text-[35px] theme-toggler dark:text-white"
+        ></i>
+      </div>
+      <div class="flex justify-center items-center lmd:hidden">
+        <i
+          class="fa-solid fa-bars cursor-pointer text-5xl sm-nav-toggler dark:text-white"
+        ></i>
+      </div>
+      <div
+        class="sm-nav absolute hidden bottom-[-155px] right-[40px] ssm:right-[80px] bg-white border border-slate-300 flex flex-col justify-center items-center gap-3 p-3 dark:bg-gray-900"
+      >
+        <i
+          class="fa-regular fa-moon cursor-pointer text-black text-[35px] theme-toggler dark:text-white"
+        ></i>
+        <div
+          class="bg-pmr-color-opc-15 cursor-pointer text-lg font-extrabold text-pmr-colo px-3 py-1 flex justify-center items-center rounded-[50%]"
+        >
+          <p class="text-pmr-color">IK</p>
+        </div>
+        <a href="personalize_news.html">
+          <button
+            type="button"
+            class="bg-pmr-color font-semibold text-white px-5 py-2 rounded-md"
+          >
+            Personalize News
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!--Navbar End-->
+
+    <!--Section Start-->
+
+    <section class="w-full px-10 ssm:px-20 pt-10 pb-20 max-w-[1440px] mx-auto">
+      <div>
+        <h3 class="text-gray-color text-2xl font-semibold dark:text-white">
+          PERSONALIZE YOUR NEWS
+        </h3>
+        <div class="w-full h-1 bg-gray-color dark:bg-white"></div>
+      </div>
+      <div class="w-full mt-7 flex justify-center items-center">
+        <div
+          class="w-100 dark:bg-gray-900 border border-slate-300 w-[450px] mx-5 flex flex-col gap-3 px-10 py-8 justify-center items-center"
+        >
+          <h4
+            class="text-xl text-gray-color font-semibold text-center dark:text-white"
+          >
+            Select your Markets
+          </h4>
+          <div
+            class="w-full text-lg font-semibold bg-medium-gray-color text-center rounded-full px-4 py-2"
+          >
+            Stocks
+          </div>
+          <div
+            class="w-full text-lg font-semibold bg-medium-gray-color text-center rounded-full px-4 py-2"
+          >
+            Crypto
+          </div>
+          <div
+            class="w-full text-lg font-semibold bg-medium-gray-color text-center rounded-full px-4 py-2"
+          >
+            Economy & Business
+          </div>
+          <div
+            class="w-full text-lg font-semibold bg-medium-gray-color text-center rounded-full px-4 py-2"
+          >
+            Commodities | Forex
+          </div>
+          <p class="w-full text-lg font-semibold text-center dark:text-white">
+            Fixed Income
+          </p>
+          <button
+            type="button"
+            class="w-full bg-pmr-color font-semibold text-white px-4 py-2 rounded-md"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Start-->
+
+    <!--Footer Start-->
+
+    <footer
+      class="w-full bg-white dark:bg-gray-900 p-4 border-t border-slate-300"
+    >
+      <p class="text-center text-xl font-bold dark:text-white">
+        &#xa9;2024 - All right reserved to TickerAI
+      </p>
+    </footer>
+
+    <!--Footer End-->
+
+    <script src="/assets/script_js-B_mq9amF.js"></script>
+  </body>
+</html>
